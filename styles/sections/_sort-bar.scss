@@ -1,0 +1,1 @@
+.sort-bar {  float: right;  width: 740px;  height: 53px;  @include box-sizing;  border: 1px solid #dee1e4;  @include border-radius(5px);  background: #e4ebee;  padding: 10px 22px 12px 10px;  &__form-sort {    float: left;  }  .sort-bat__list {    float: right;  }}

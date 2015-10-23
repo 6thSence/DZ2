@@ -517,9 +517,21 @@ body {
 }
 
 .container {
-  width: 945px;
+  min-width: 960px;
+  max-width: 1096px;
   margin: 0 auto;
   position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: dashed 2px black;
+  min-height: 100%;
+}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
 }
 
 .wrapper {
@@ -528,7 +540,7 @@ body {
   height: auto !important;
   height: 100%;
   overflow: hidden;
-  min-width: 965px;
+  min-width: 980px;
 }
 .wrapper:after {
   display: block;
@@ -635,17 +647,160 @@ footer {
 }
 /* --------- sections --------- */
 .header {
-  min-width: 945px;
-  position: relative;
-}
-.header__wrapper {
-  height: 100%;
-  position: relative;
-  margin: 0 auto;
-  min-width: 945px;
+  width: 100%;
+  min-width: 960px;
 }
 .header__contact {
-  background: #ffffff;
-  widows: 100%;
+  background: #fff;
   height: 78px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header__contact_wrapper {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 25px 78px 25px 78px;
+}
+.header__contact_wrapper .socials {
+  float: left;
+}
+.header__contact_wrapper .socials__list, .header__contact_wrapper .socials__item, .header__contact_wrapper .socials__link {
+  display: inline-block;
+}
+.header__contact_wrapper .socials__link {
+  width: 26px;
+  height: 26px;
+  background-size: 25px 25px;
+  margin-right: 16px;
+}
+.header__contact_wrapper .socials__link_fb {
+  background: url("../img/icons/fb.png") no-repeat center;
+}
+.header__contact_wrapper .socials__link_fb:hover {
+  background: url("../img/icons/fb_hover.png") no-repeat center;
+}
+.header__contact_wrapper .socials__link_vk {
+  background: url("../img/icons/vk.png") no-repeat center;
+}
+.header__contact_wrapper .socials__link_vk:hover {
+  background: url("../img/icons/vk_hover.png") no-repeat center;
+}
+.header__contact_wrapper .socials__link_tw {
+  background: url("../img/icons/tw.png") no-repeat center;
+}
+.header__contact_wrapper .socials__link_tw:hover {
+  background: url("../img/icons/tw_hover.png") no-repeat center;
+}
+.header__contact_wrapper .our-phone, .header__contact_wrapper .adress {
+  float: right;
+}
+.header__contact_wrapper .adress {
+  margin-right: 93px;
+  background: url("../img/map_tip.png") no-repeat left;
+  background-position: 0 8px;
+  background-size: 13px 16px;
+  height: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.header__contact_wrapper .our-phone__text {
+  font-family: opensans-semibold-webfont;
+  font-size: 1.3em;
+  background: url("../img/phone.png") no-repeat left;
+  background-size: 14px 17px;
+  padding-left: 20px;
+}
+.header__contact:after {
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 78px;
+  width: 100%;
+  height: 2px;
+  background: #ebedef;
+}
+
+.path {
+  width: 100%;
+  height: 122px;
+  padding: 30px 0 30px 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: dashed 2px black;
+}
+
+.sidebar {
+  float: left;
+}
+
+.product-class {
+  width: 333px;
+  min-height: 95px;
+  overflow: hidden;
+  background: #fbfbfb;
+  border: solid 1px #dee1e4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 38px;
+}
+
+.product-settings {
+  width: 333px;
+  max-height: 1022px;
+  overflow: hidden;
+  background: #fbfbfb;
+  border: solid 1px #dee1e4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sort-bar {
+  float: right;
+  width: 740px;
+  height: 53px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #dee1e4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #e4ebee;
+  padding: 10px 22px 12px 10px;
+}
+.sort-bar__form-sort {
+  float: left;
+}
+.sort-bar .sort-bat__list {
+  float: right;
+}
+
+.content-page {
+  float: right;
+}
+
+.info:before, .info:after {
+  content: "";
+  display: table;
+}
+.info:after {
+  clear: both;
 }

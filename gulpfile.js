@@ -60,6 +60,7 @@ gulp.task('jade', function() {
 		.pipe(gulp.dest(paths.jade.destination));
 });
 
+
 //включаем bower файлы
 gulp.task('bower', function () {
 	gulp.src(RS_CONF.path.htmlDir)
@@ -105,7 +106,6 @@ gulp.task('sync', function() {
 gulp.task('watch', function(){
 	gulp.watch(paths.jade.location, ['jade']);
 	gulp.watch(paths.scss.location, ['compass']);
-	
 	gulp.watch(paths.browserSync.watchPaths).on('change', browserSync.reload);
 });
 
@@ -117,6 +117,7 @@ gulp.task('default', ['jade', 'compass','bower', 'sync', 'watch']);
 /*******************************************
  * DIST
  ******************************************/
+
 gulp.task('jadeDist', function() {
 	gulp.src(paths.jade.compiled)
 		.pipe(plumber())
@@ -192,8 +193,6 @@ gulp.task("images", function () {
 		}))
 		.pipe(gulp.dest(RS_CONF.path.distDir+"/img"));
 });
-
-
 
 gulp.task('build', ['jadeDist', 'bowerDist', 'userefDist', 'compassDist','images']);
 gulp.task('build-sync', ['jadeDist', 'bowerDist', 'userefDist', 'compassDist','images', 'syncDist', 'watchDist']);

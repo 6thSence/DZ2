@@ -1,3 +1,5 @@
+
+
 /* --------- mixins --------- */
 
 @mixin inlineblock {
@@ -39,6 +41,11 @@
 	-ms-transition:     $transition;
 	-o-transition:      $transition;
 	transition:      $transition;
+}
+
+@mixin box-sizing {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
