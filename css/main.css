@@ -745,6 +745,7 @@ footer {
   background-size: 237px 35px;
   border: none;
   margin-right: 57px;
+  outline: none;
 }
 .header__block__search-form__input {
   width: 288px;
@@ -811,6 +812,51 @@ footer {
 .header__block__nav-site__link:hover {
   border-bottom: 1px solid #ff6600;
   color: #ff6600;
+}
+.header__nav {
+  width: 100%;
+  min-width: 1264px;
+  background: #fff;
+  height: 53px;
+  border-bottom: 1px solid #ebedef;
+}
+.header__nav__list, .header__nav__item, .header__nav__link {
+  display: inline-block;
+  text-decoration: none;
+}
+.header__nav .container_nav {
+  padding: 0 78px 0 78px;
+  width: 100%;
+  height: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header__nav__list {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  max-width: 1075px;
+  margin: 0 auto;
+}
+.header__nav__item {
+  padding: 16px 20px;
+  height: 53px;
+  margin-right: -4px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header__nav__item .header__nav__link {
+  color: #333333;
+}
+.header__nav__item:focus {
+  outline: none;
+}
+.header__nav__item:hover {
+  background: #ff6600;
+}
+.header__nav__item:hover .header__nav__link {
+  color: #ffffff;
 }
 
 .path {

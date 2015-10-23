@@ -79,3 +79,10 @@
 	outline: none;
   }
 }
+
+@mixin list-item-link-inline-block {
+  &__list, &__item, &__link {
+	display: inline-block;
+	text-decoration: none;
+  }
+}
