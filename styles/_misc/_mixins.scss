@@ -74,3 +74,8 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$top-color, EndColorStr=$bottom-color);
 }
 
+@mixin outline {
+  &:focus {
+	outline: none;
+  }
+}
