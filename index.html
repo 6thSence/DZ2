@@ -33,7 +33,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="header__block"><img class="header__block__logo">
+					<div class="header__block"><a class="header__block__logo"></a>
 						<form action="" method="POST" class="header__block__search-form">
 							<input type="text" placeholder="Что будем искать" class="header__block__search-form__input">
 							<button type="submit" class="header__block__search-form__button">Найти</button>
@@ -66,10 +66,9 @@
 				<div class="container">
 					<div class="path">
 						<ul class="main-content__list"></ul>
-						<li class="main-content__item">Главная</li>
+						<li class="main-content__item"><a href="#" class="main-content__link">Главная</a></li>
 						<li class="main-content__item">></li>
-						<li class="main-content__item main-content__item_active">Каталог</li>
-						<!--block title-page-->
+						<li class="main-content__item main-content__item_active"><a href="#" class="main-content__link">Каталог</a></li>
 						<p class="title-page">Мобильные телефоны</p>
 					</div>
 					<sidebar class="sidebar">
@@ -81,73 +80,100 @@
 						</div>
 						<div class="product-settings">
 							<ul class="product-settings__list">
-								<li class="product-settings__item product-settings__item-avail">Наличие в магазинах
-									<forn class="avail__form">
-										<ul class="avail__list">
-											<li class="avail__item">
-												<input type="radio" id="avail__in-all" class="avail__in-all">  Во всех магазинах
+								<li class="product-settings__item product-settings__item-avail"><a class="trigger trigger_open">Наличие в магазинах</a>
+									<div class="inner-item">
+										<forn class="avail">
+											<ul class="avail__list">
+												<li class="avail__item">
+													<input type="radio" checked="checked" name="avail" id="avail__in-all_1" class="avail__in-all">
+													<label for="avail__in-all_1" class="avail__text">  Во всех магазинах</label>
+												</li>
+												<li class="avail__item">
+													<input type="radio" name="avail" id="avail__in-all_2" class="avail__in-all">
+													<label for="avail__in-all_2" class="avail__text">  В ближайшем ко мне магазине</label>
+												</li>
+											</ul>
+										</forn>
+									</div>
+								</li>
+								<li class="product-settings__item product-settings__item-brand"><a class="trigger trigger_open">Бренды</a>
+									<div class="inner-item">
+										<form class="brand">
+											<ul class="brand__list">
+												<li class="brand__item ">
+													<input type="checkbox" name="bland" id="Lenovo_1" class="brand__checkbox"/>
+													<label for="Lenovo_1" class="brand__text">Lenovo</label>
+												</li>
+												<li class="brand__item ">
+													<input type="checkbox" name="bland" id="Apple_2" class="brand__checkbox"/>
+													<label for="Apple_2" class="brand__text">Apple</label>
+												</li>
+												<li class="brand__item ">
+													<input type="checkbox" name="bland" id="Samsung_3" class="brand__checkbox"/>
+													<label for="Samsung_3" class="brand__text">Samsung</label>
+												</li>
+												<li class="brand__item ">
+													<input type="checkbox" name="bland" id="Asus_4" class="brand__checkbox"/>
+													<label for="Asus_4" class="brand__text">Asus</label>
+												</li>
+												<li class="brand__item ">
+													<input type="checkbox" name="bland" id="Motorola_5" class="brand__checkbox"/>
+													<label for="Motorola_5" class="brand__text">Motorola</label>
+												</li>
+											</ul><a href="#" class="brand__filter-off">Сбросить фильтр</a>
+										</form>
+									</div>
+								</li>
+								<li class="product-settings__item product-settings__item-price"><a class="trigger trigger_open">Цена</a>
+									<div class="inner-item">
+										<form class="price"><span class="price__text">от</span>
+											<input type="text" class="price__from"><span class="price__text">до</span>
+											<input type="text" class="price__to">
+										</form>
+										<div class="slider">здесь будет слайдер</div>
+									</div>
+								</li>
+								<li class="product-settings__item product-settings__item-color"><a class="trigger trigger_open">Цвет</a>
+									<div class="inner-item">
+										<div class="color">
+											<ul class="color__list">
+												<li class="color__item color__item_ffffff"></li>
+												<li class="color__item color__item_cccccc"></li>
+												<li class="color__item color__item_000000"></li>
+												<li class="color__item color__item_0a3153"></li>
+												<li class="color__item color__item_ff1800"></li>
+												<li class="color__item color__item_fff343"></li>
+												<li class="color__item color__item_fb914a"></li>
+												<li class="color__item color__item_92c37c"></li>
+												<li class="color__item color__item_40a6ff"></li>
+												<li class="color__item color__item_9870ad"></li>
+												<li class="color__item color__item_dc78ad"></li>
+												<li class="color__item color__item_7f401d"></li><a href="#" class="color__filter-off">Сбросить фильтр</a>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="product-settings__item product-settings__item-os"><a class="trigger trigger_open">Операционные системы</a>
+									<div class="inner-item">
+										<ul class="os__list">
+											<li class="os__item">
+												<input type="checkbox" id="os__item_Androin" class="os__item_Androin">Androin
 											</li>
-											<li class="avail__item">
-												<input type="radio" id="avail__in-all" class="avail__in-all">  В ближайшем ко мне магазине
+											<li class="os__item">
+												<input type="checkbox" id="os__item_IOS" class="os__item_IOS">IOS
 											</li>
+											<li class="os__item">
+												<input type="checkbox" id="os__item_Windows Mobile" class="os__item_Windows Mobile">Windows Mobile
+											</li>
+											<li class="os__item">
+												<input type="checkbox" id="os__item_Symbian" class="os__item_Symbian">Symbian
+											</li>
+											<li class="os__item">
+												<input type="checkbox" id="os__item_Custom" class="os__item_Custom">Custom
+											</li>
+											<p class="brand__filter-off">Сбросить фильм</p>
 										</ul>
-									</forn>
-								</li>
-								<li class="product-settings__item product-settings__item-brand">Бренды
-									<form class="brand__form">
-										<ul class="brand__list">
-											<li class="brand__item "><a href="#" class="brand__link">Lenovo</a></li>
-											<li class="brand__item "><a href="#" class="brand__link">Apple</a></li>
-											<li class="brand__item "><a href="#" class="brand__link">Samsung</a></li>
-											<li class="brand__item "><a href="#" class="brand__link">Asus</a></li>
-											<li class="brand__item "><a href="#" class="brand__link">Motorola</a></li>
-										</ul><a href="#" class="brand__filter-off">Сбросить фильтр</a>
-									</form>
-								</li>
-								<li class="product-settings__item product-settings__item-price">Цена
-									<form class="price__form">
-										<p class="price__text">от</p>
-										<input type="text" class="price__from">
-										<p class="price__text">до</p>
-										<input type="text" class="price__to">
-									</form>
-									<div class="slider">здесь будет слайдер</div>
-								</li>
-								<li class="product-settings__item product-settings__item-color">Цвет
-									<ul class="color__list">
-										<li class="color__list color__list_#ffffff"></li>
-										<li class="color__list color__list_#cccccc"></li>
-										<li class="color__list color__list_#000000"></li>
-										<li class="color__list color__list_#0a3153"></li>
-										<li class="color__list color__list_#ff1800"></li>
-										<li class="color__list color__list_#fff343"></li>
-										<li class="color__list color__list_#fb914a"></li>
-										<li class="color__list color__list_#92c37c"></li>
-										<li class="color__list color__list_#40a6ff"></li>
-										<li class="color__list color__list_#9870ad"></li>
-										<li class="color__list color__list_#dc78ad"></li>
-										<li class="color__list color__list_#7f401d"></li><a href="#" class="brand__filter-off">Сбросить фильтр</a>
-									</ul>
-								</li>
-								<li class="product-settings__item product-settings__item-os">
-									<ul class="os__list">
-										<li class="os__item">
-											<input type="checkbox" id="os__item_Androin" class="os__item_Androin">Androin
-										</li>
-										<li class="os__item">
-											<input type="checkbox" id="os__item_IOS" class="os__item_IOS">IOS
-										</li>
-										<li class="os__item">
-											<input type="checkbox" id="os__item_Windows Mobile" class="os__item_Windows Mobile">Windows Mobile
-										</li>
-										<li class="os__item">
-											<input type="checkbox" id="os__item_Symbian" class="os__item_Symbian">Symbian
-										</li>
-										<li class="os__item">
-											<input type="checkbox" id="os__item_Custom" class="os__item_Custom">Custom
-										</li>
-										<p class="brand__filter-off">Сбросить фильм</p>
-									</ul>
+									</div>
 								</li>
 							</ul>
 						</div>

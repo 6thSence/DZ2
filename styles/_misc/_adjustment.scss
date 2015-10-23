@@ -1,6 +1,6 @@
 /* --------- adjustment --------- */
 
-$container-width    : 960px;
+$container-width    : 1264px;
 $footer-height      : 50px;
 $body-font          : opensans-regular-webfont, Arial, Helvetica, sans-serif;
 $bodyColor          : #f4f4f4;
@@ -27,7 +27,7 @@ body {
     position: relative;
     //padding: 0 $paddinglr 0 $paddinglr;
     @include box-sizing;
-    border: dashed 2px black;
+    //border: dashed 2px black;
     min-height: 100%;
     @include clearfix;
 }
