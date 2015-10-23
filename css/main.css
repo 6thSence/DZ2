@@ -961,7 +961,7 @@ footer {
 
 .product-settings {
   width: 333px;
-  max-height: 1022px;
+  max-height: 1055px;
   overflow: hidden;
   background: #fbfbfb;
   border: solid 1px #dee1e4;
@@ -1096,6 +1096,32 @@ footer {
   color: #5db2fc;
 }
 .product-settings__item .color__filter-off:focus {
+  outline: none;
+}
+.product-settings .os__list {
+  margin-bottom: 15px;
+}
+.product-settings .os__item {
+  margin-top: 15px;
+}
+.product-settings .os__item:first-child {
+  margin-top: 5px;
+}
+.product-settings .os__checkbox {
+  display: none;
+}
+.product-settings .os__checkbox:checked + .os__text {
+  background: url("../img/checkbox_active.png") no-repeat left;
+}
+.product-settings .os__text {
+  padding-left: 30px;
+  cursor: pointer;
+  background: url("../img/checkbox.png") no-repeat left;
+}
+.product-settings .os__filter-off {
+  color: #5db2fc;
+}
+.product-settings .os__filter-off:focus {
   outline: none;
 }
 
