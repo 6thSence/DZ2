@@ -1,7 +1,7 @@
 /* --------- adjustment --------- */
 
 $container-width    : 1264px;
-$footer-height      : 50px;
+$footer-height      : 220px;
 $body-font          : opensans-regular-webfont, Arial, Helvetica, sans-serif;
 $bodyColor          : #f4f4f4;
 
@@ -33,6 +33,12 @@ body {
 }
 
 .wrapper {
+    &:after {
+        content: "";
+        display: block;
+        //position: relative;
+        height: $footer-height+20px;
+    }
     position: relative;
     min-height: 100%;
     height: auto !important;
@@ -40,11 +46,7 @@ body {
     overflow: hidden;
     min-width: $container-width + 20;
 
-    &:after {
-	    display: block;
-        position: relative;
-        height: $footer-height;
-    }
+
 }
 
 table {
