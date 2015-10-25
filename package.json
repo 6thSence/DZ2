@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "template for good works",
   "main": "gulpfile.js",
-  "repository" : "https://github.com/wowua/loftschool-template",
+  "repository": "https://github.com/wowua/loftschool-template",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +27,8 @@
     "vinyl-ftp": "^0.4.5",
     "wiredep": "^2.2.2",
     "gulp-plumber": "^1.0.1"
+  },
+  "dependencies": {
+
   }
 }

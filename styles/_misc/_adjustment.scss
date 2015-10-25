@@ -31,7 +31,9 @@ body {
     min-height: 100%;
     @include clearfix;
 }
-
+.main-content {
+    margin-bottom: 30px;
+}
 .wrapper {
     &:after {
         content: "";
@@ -44,7 +46,7 @@ body {
     height: auto !important;
     height: 100%;
     overflow: hidden;
-    min-width: $container-width + 20;
+    min-width: $container-width + 156;
 
 
 }
