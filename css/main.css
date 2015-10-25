@@ -1009,6 +1009,7 @@ footer {
   border: none;
 }
 .product-settings__item .inner-item {
+  display: none;
   padding: 0 29px 16px 29px;
 }
 .product-settings__item .avail__item {
@@ -2114,6 +2115,10 @@ footer {
   font-family: opensans-bold-webfont;
   margin-bottom: 15px;
   font-size: 1.4em;
+}
+.info__text {
+  color: #474747;
+  font-family: opensans-bold-webfont;
 }
 
 .footer {

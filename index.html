@@ -7,11 +7,15 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="device-width"><!-- build:css css/vendor.min.css -->
 		<!-- bower:css -->
+		<link rel="stylesheet" href="bower/jquery-ui/jquery-ui.css" />
+		<link rel="stylesheet" href="bower/jquery-ui/jquery-ui.structure.css" />
+		<link rel="stylesheet" href="bower/jquery-ui/jquery-ui.theme.css" />
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:js js/modernizr.min.js -->
 		<script src="bower/modernizr/modernizr.js"></script><!-- endbuild -->
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css">
 		<title>Мобильные телефоны</title>
 	</head>
 	<body>
@@ -79,7 +83,7 @@
 						</div>
 						<div class="product-settings">
 							<ul class="product-settings__list">
-								<li class="product-settings__item product-settings__item-avail"><a class="trigger trigger_open">Наличие в магазинах</a>
+								<li class="product-settings__item product-settings__item-avail"><a class="trigger trigger_close">Наличие в магазинах</a>
 									<div class="inner-item">
 										<forn class="avail">
 											<ul class="avail__list">
@@ -95,7 +99,7 @@
 										</forn>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-brand"><a class="trigger trigger_open">Бренды</a>
+								<li class="product-settings__item product-settings__item-brand"><a class="trigger trigger_close"> Бренды</a>
 									<div class="inner-item">
 										<form class="brand">
 											<ul class="brand__list">
@@ -123,7 +127,7 @@
 										</form>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-price"><a class="trigger trigger_open">Цена</a>
+								<li class="product-settings__item product-settings__item-price"><a class="trigger trigger_close"> Цена</a>
 									<div class="inner-item">
 										<form class="price"><span class="price__text">от</span>
 											<input type="text" class="price__from"><span class="price__text">до</span>
@@ -132,7 +136,7 @@
 										<div class="slider">здесь будет слайдер</div>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-color"><a class="trigger trigger_open">Цвет</a>
+								<li class="product-settings__item product-settings__item-color"><a class="trigger trigger_close"> Цвет</a>
 									<div class="inner-item">
 										<div class="color">
 											<ul class="color__list">
@@ -152,7 +156,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-os"><a class="trigger trigger_open">Операционные системы</a>
+								<li class="product-settings__item product-settings__item-os"><a class="trigger trigger_close"> Операционные системы</a>
 									<div class="inner-item">
 										<form class="osss">
 											<ul class="os__list">
@@ -185,7 +189,7 @@
 					</sidebar>
 					<div class="sort-bar">
 						<form class="sort-bar__form-sort"><span class="sort-bar__form-sort__text">Сортировать по</span>
-							<select size="1" class="sort-bar__select">
+							<select id="select-bar" size="1" class="sort-bar__select">
 								<option id="price" class="sort-bar__option">По цене</option>
 								<option id="rating" class="sort-bar__option">По рейтингу</option>
 							</select>
@@ -473,10 +477,10 @@
 		<!-- bower:js -->
 		<script src="bower/jquery/jquery.js"></script>
 		<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+		<script src="bower/jquery-ui/jquery-ui.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 		<script src="js/main.js"></script>
-		<!--script(type = "js/jquery.columnizer.js')-->
-		<script type="js/plugins/Columnizer/src/jquery.columnizer.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 	</body>
 </html>
