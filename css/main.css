@@ -1463,6 +1463,11 @@ footer {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.content-page .var-1 .wrapper-inner .slider__list, .content-page .var-1 .wrapper-inner .slider__item {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+}
 .content-page .var-1 .wrapper-inner__gallery {
   float: left;
   width: 134px;
@@ -1488,7 +1493,7 @@ footer {
 }
 .content-page .var-1 .wrapper-inner__gallery .min-pick {
   cursor: pointer;
-  margin-left: 13px;
+  margin-left: 9px;
   display: inline-block;
   width: 33px;
   height: 33px;
@@ -1913,163 +1918,163 @@ footer {
 }
 
 .main-pick-1 {
-  background: #ffffff url("../img/phones/phone_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-1_1 {
-  background: #ffffff url("../img/phones/phone_1_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-1_2 {
-  background: #ffffff url("../img/phones/phone_1_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-1_3 {
-  background: #ffffff url("../img/phones/phone_1_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-2 {
-  background: #ffffff url("../img/phones/phone_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-2_1 {
-  background: #ffffff url("../img/phones/phone_2_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-2_2 {
-  background: #ffffff url("../img/phones/phone_2_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-2_3 {
-  background: #ffffff url("../img/phones/phone_2_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-3 {
-  background: #ffffff url("../img/phones/phone_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-3_1 {
-  background: #ffffff url("../img/phones/phone_3_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-3_2 {
-  background: #ffffff url("../img/phones/phone_3_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-3_3 {
-  background: #ffffff url("../img/phones/phone_3_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-4 {
-  background: #ffffff url("../img/phones/phone_4.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-4_1 {
-  background: #ffffff url("../img/phones/phone_4_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-4_2 {
-  background: #ffffff url("../img/phones/phone_4_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-4_3 {
-  background: #ffffff url("../img/phones/phone_4_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-5 {
-  background: #ffffff url("../img/phones/phone_5.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-5_1 {
-  background: #ffffff url("../img/phones/phone_5_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-5_2 {
-  background: #ffffff url("../img/phones/phone_5_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-5_3 {
-  background: #ffffff url("../img/phones/phone_5_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-6 {
-  background: #ffffff url("../img/phones/phone_6.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-6_1 {
-  background: #ffffff url("../img/phones/phone_6_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-6_2 {
-  background: #ffffff url("../img/phones/phone_6_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-6_3 {
-  background: #ffffff url("../img/phones/phone_6_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-7 {
-  background: #ffffff url("../img/phones/phone_7.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-7_1 {
-  background: #ffffff url("../img/phones/phone_7_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-7_2 {
-  background: #ffffff url("../img/phones/phone_7_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-7_3 {
-  background: #ffffff url("../img/phones/phone_7_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-8 {
-  background: #ffffff url("../img/phones/phone_8.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-8_1 {
-  background: #ffffff url("../img/phones/phone_8_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-8_2 {
-  background: #ffffff url("../img/phones/phone_8_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-8_3 {
-  background: #ffffff url("../img/phones/phone_8_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-9 {
-  background: #ffffff url("../img/phones/phone_9.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-9_1 {
-  background: #ffffff url("../img/phones/phone_9_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-9_2 {
-  background: #ffffff url("../img/phones/phone_9_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-9_3 {
-  background: #ffffff url("../img/phones/phone_9_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .main-pick-10 {
-  background: #ffffff url("../img/phones/phone_10.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-10_1 {
-  background: #ffffff url("../img/phones/phone_10_min_1.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-10_2 {
-  background: #ffffff url("../img/phones/phone_10_min_2.png") no-repeat center;
+  background: #ffffff;
 }
 
 .min-pick-10_3 {
-  background: #ffffff url("../img/phones/phone_10_min_3.png") no-repeat center;
+  background: #ffffff;
 }
 
 .pages {
@@ -2099,6 +2104,16 @@ footer {
 }
 .pages__item:hover, .pages__item_active {
   background: #e0e0e0;
+}
+
+.image-gallery {
+  width: 135px;
+  height: auto;
+}
+
+.image-gallery_min {
+  width: 33px;
+  height: auto;
 }
 
 .info {
