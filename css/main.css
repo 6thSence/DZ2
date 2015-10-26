@@ -1075,6 +1075,7 @@ footer {
 }
 .product-settings__item .price {
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 .product-settings__item .price__text {
   margin-right: 13px;
@@ -1342,6 +1343,27 @@ footer {
   color: #5db2fc;
 }
 .product-settings .os__filter-off:focus {
+  outline: none;
+}
+
+.ui-slider {
+  margin-bottom: 15px;
+  height: 3px;
+  background: #dee1e4;
+  border: none;
+}
+.ui-slider:focus {
+  outline: none;
+}
+.ui-slider .ui-slider-range {
+  background: #ff6600;
+}
+.ui-slider .ui-slider-handle {
+  top: 0px;
+  border: none;
+  background: url("../img/price_tip.png") no-repeat center;
+}
+.ui-slider .ui-slider-handle:focus {
   outline: none;
 }
 
