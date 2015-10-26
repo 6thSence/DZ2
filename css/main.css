@@ -683,23 +683,35 @@ footer {
 .header__contact_wrapper .socials__link:focus {
   outline: none;
 }
-.header__contact_wrapper .socials__link_fb {
-  background: url("../img/icons/fb.png") no-repeat center;
-}
-.header__contact_wrapper .socials__link_fb:hover {
-  background: url("../img/icons/fb_hover.png") no-repeat center;
-}
 .header__contact_wrapper .socials__link_vk {
-  background: url("../img/icons/vk.png") no-repeat center;
+  background: url('../img/icon-black-sd0e43f0768.png') 0 -192px no-repeat;
+  height: 26px;
+  width: 27px;
 }
 .header__contact_wrapper .socials__link_vk:hover {
-  background: url("../img/icons/vk_hover.png") no-repeat center;
+  background: url('../img/icon-black-hover-s48b5a0c379.png') 0 -192px no-repeat;
+  height: 26px;
+  width: 27px;
 }
 .header__contact_wrapper .socials__link_tw {
-  background: url("../img/icons/tw.png") no-repeat center;
+  background: url('../img/icon-black-sd0e43f0768.png') 0 -96px no-repeat;
+  height: 26px;
+  width: 26px;
 }
 .header__contact_wrapper .socials__link_tw:hover {
-  background: url("../img/icons/tw_hover.png") no-repeat center;
+  background: url('../img/icon-black-hover-s48b5a0c379.png') 0 -96px no-repeat;
+  height: 26px;
+  width: 26px;
+}
+.header__contact_wrapper .socials__link_fb {
+  background: url('../img/icon-black-sd0e43f0768.png') 0 0 no-repeat;
+  height: 26px;
+  width: 26px;
+}
+.header__contact_wrapper .socials__link_fb:hover {
+  background: url('../img/icon-black-hover-s48b5a0c379.png') 0 0 no-repeat;
+  height: 26px;
+  width: 26px;
 }
 .header__contact_wrapper .our-phone, .header__contact_wrapper .adress {
   float: right;
@@ -1650,6 +1662,11 @@ footer {
   box-sizing: border-box;
   padding: 20px 14px 20px 14px;
 }
+.content-page .var-2 .contetn-page__item .wrapper-inner .slider__list, .content-page .var-2 .contetn-page__item .wrapper-inner .slider__item {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+}
 .content-page .var-2 .contetn-page__item .wrapper-inner__article, .content-page .var-2 .contetn-page__item .wrapper-inner .about, .content-page .var-2 .contetn-page__item .wrapper-inner .charecteristics__comma {
   display: none;
 }
@@ -1680,7 +1697,7 @@ footer {
 }
 .content-page .var-2 .contetn-page__item .wrapper-inner__gallery .min-pick {
   cursor: pointer;
-  margin-left: 13px;
+  margin-left: 9px;
   display: inline-block;
   width: 33px;
   height: 33px;
@@ -2121,7 +2138,6 @@ footer {
   min-width: 960px;
   max-width: 1096px;
   margin: 0 auto;
-  border: 1px dashed blanchedalmond;
   padding: 0 78px 0 78px;
   margin-bottom: 10px;
 }
@@ -2189,23 +2205,35 @@ footer {
 .footer .socials__link:focus {
   outline: none;
 }
-.footer .socials__link_wt_fb {
-  background: url("../img/icons/fb_wt.png") no-repeat center;
-}
-.footer .socials__link_wt_fb:hover {
-  background: url("../img/icons/fb_wt_hover.png") no-repeat center;
-}
 .footer .socials__link_wt_vk {
-  background: url("../img/icons/vk_wt.png") no-repeat center;
+  background: url('../img/icon-white-se57d97e164.png') 0 -228px no-repeat;
+  height: 44px;
+  width: 44px;
 }
 .footer .socials__link_wt_vk:hover {
-  background: url("../img/icons/vk_wt_hover.png") no-repeat center;
+  background: url('../img/icon-white-hover-sc84281cdb9.png') 0 -228px no-repeat;
+  height: 44px;
+  width: 44px;
 }
 .footer .socials__link_wt_tw {
-  background: url("../img/icons/tw_wt.png") no-repeat center;
+  background: url('../img/icon-white-se57d97e164.png') 0 -114px no-repeat;
+  height: 44px;
+  width: 43px;
 }
 .footer .socials__link_wt_tw:hover {
-  background: url("../img/icons/tw_wt_hover.png") no-repeat center;
+  background: url('../img/icon-white-hover-sc84281cdb9.png') 0 -114px no-repeat;
+  height: 44px;
+  width: 43px;
+}
+.footer .socials__link_wt_fb {
+  background: url('../img/icon-white-se57d97e164.png') 0 0 no-repeat;
+  height: 44px;
+  width: 43px;
+}
+.footer .socials__link_wt_fb:hover {
+  background: url('../img/icon-white-hover-sc84281cdb9.png') 0 0 no-repeat;
+  height: 44px;
+  width: 43px;
 }
 .footer__menu-1, .footer__menu-2 {
   display: inline-block;
