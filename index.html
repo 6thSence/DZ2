@@ -2,7 +2,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="ru_RU">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="device-width"><!-- build:css css/vendor.min.css -->
@@ -37,7 +37,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="header__block"><a class="header__block__logo"></a>
+					<div class="header__block"><a class="header__block__logo_wrapp"><img src="img/logo.png" class="header__block__logo"></a>
 						<form action="" method="POST" class="header__block__search-form">
 							<input type="text" placeholder="Что будем искать" class="header__block__search-form__input">
 							<button type="submit" class="header__block__search-form__button">Найти</button>
@@ -83,7 +83,7 @@
 						</div>
 						<div class="product-settings">
 							<ul class="product-settings__list">
-								<li class="product-settings__item product-settings__item-avail"><a class="trigger trigger_close">Наличие в магазинах</a>
+								<li class="product-settings__item product-settings__item-avail"><a class="trigger trigger_open">Наличие в магазинах</a>
 									<div class="inner-item">
 										<forn class="avail">
 											<ul class="avail__list">
@@ -99,7 +99,7 @@
 										</forn>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-brand"><a class="trigger trigger_close"> Бренды</a>
+								<li class="product-settings__item product-settings__item-brand"><a class="trigger trigger_open"> Бренды</a>
 									<div class="inner-item">
 										<form class="brand">
 											<ul class="brand__list">
@@ -127,16 +127,16 @@
 										</form>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-price"><a class="trigger trigger_close"> Цена</a>
+								<li class="product-settings__item product-settings__item-price"><a class="trigger trigger_open"> Цена</a>
 									<div class="inner-item">
 										<form class="price"><span class="price__text">от</span>
-											<input type="text" class="price__from"><span class="price__text">до</span>
-											<input type="text" class="price__to">
+											<input type="text" disabled="disabled" class="price__from"><span class="price__text">до</span>
+											<input type="text" disabled="disabled" class="price__to">
 										</form>
 										<div id="slider-range"></div>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-color"><a class="trigger trigger_close"> Цвет</a>
+								<li class="product-settings__item product-settings__item-color"><a class="trigger trigger_open"> Цвет</a>
 									<div class="inner-item">
 										<div class="color">
 											<ul class="color__list">
@@ -156,7 +156,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="product-settings__item product-settings__item-os"><a class="trigger trigger_close"> Операционные системы</a>
+								<li class="product-settings__item product-settings__item-os"><a class="trigger trigger_open"> Операционные системы</a>
 									<div class="inner-item">
 										<form class="osss">
 											<ul class="os__list">
@@ -201,7 +201,7 @@
 						</ul>
 					</div>
 					<div class="content-page">
-						<div id="var" class="var-1">
+						<div id="var" class="extended">
 							<ul class="content-page__list">
 								<li class="contetn-page__item">
 									<div class="wrapper-inner">
@@ -227,7 +227,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -259,7 +259,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -291,7 +291,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -323,7 +323,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -355,7 +355,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -387,7 +387,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -419,7 +419,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -451,7 +451,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -483,7 +483,7 @@
 											<li class="characteristics__item"><span class="charecteristics__what">4G(LTE) &#160</span><span class="charecteristics__this">Нет</span><span class="charecteristics__comma">,&#160</span></li>
 											<li class="characteristics__item"><span class="charecteristics__what">GPS-модуль &#160</span><span class="charecteristics__this">Есть</span><span class="charecteristics__comma">&#160 ...</span></li>
 										</ul>
-										<div class="wrapper-inner__rating"><a class="rating_image"></a><span class="rating-result">4</span></div>
+										<div class="wrapper-inner__rating"><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image rating_image_full"></a><a class="rating_image"></a><span class="rating-result">4</span></div>
 										<div class="wrap-price">
 											<p class="wrapper-inner__price">11 290 ₽</p>
 											<button class="wrapper-inner__button">В корзину</button>
@@ -507,17 +507,17 @@
 			</div>
 			<div class="info">
 				<p class="info__title">  Важная информация</p>
-				<p id="info__text" class="info__text">
-					 &#8195;&#8195;&#8195;&#8195;Задача организации, в особенности же начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки дальнейших направлений развития. Таким образом рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития. &#010; Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки соответствующий условий активизации. Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции позволяет оценить значение существенных финансовых и административных условий. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития. Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий.
-					   Таким образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание дальнейших направлений развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание дальнейших направлений развития.
-					 Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. С другой стороны сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание систем массового участия. Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации.
-					 Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки форм развития.
-					Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что сложившаяся структура организации требуют определения и уточнения дальнейших направлений развития. Товарищи! рамки и место обучения кадров способствует подготовки и реализации направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет оценить значение систем массового участия. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке модели развития.
-				</p>
+				<div id="info__text">
+					<p class="info__text">&#8195;&#8195;&#8195;&#8195;Задача организации, в особенности же начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки дальнейших направлений развития. Таким образом рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития. &#010; Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки соответствующий условий активизации. Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции позволяет оценить значение существенных финансовых и административных условий. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития. Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
+					<p class="info__text">  Таким образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание дальнейших направлений развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание дальнейших направлений развития.</p>
+					<p class="info__text">Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. С другой стороны сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание систем массового участия. Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+					<p class="info__text">Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки форм развития.</p>
+					<p class="info__text">Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что сложившаяся структура организации требуют определения и уточнения дальнейших направлений развития. Товарищи! рамки и место обучения кадров способствует подготовки и реализации направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет оценить значение систем массового участия. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке модели развития.</p>
+				</div>
 			</div>
 		</div>
 		<footer class="footer">
-			<div class="footer__block"><a class="logo-wt"></a>
+			<div class="footer__block"><a class="logo-wt_wrap"><img src="img/logo_wt.png" class="logo-wt"></a>
 				<div class="footer__socials">
 					<ul class="socials__list">
 						<li class="socials__item socials__item"><a href="#" class="socials__link socials__link socials__link_wt_fb"></a></li>
@@ -550,9 +550,10 @@
 		<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 		<script src="bower/jquery-ui/jquery-ui.js"></script>
 		<!-- endbower -->
-		<!-- endbuild -->
 		<script src="js/plugins/Columnizer/src/jquery.columnizer.js"></script>
-		<script src="js/select2.js"></script>
+		<script src="js/select2.js"></script><!-- endbuild -->
+		<!--script(src='js/plugins/Columnizer/src/jquery.columnizer.js')-->
+		<!--script(src='js/select2.js')-->
 		<script src="js/main.js"></script>
 	</body>
 </html>
