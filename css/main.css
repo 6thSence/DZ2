@@ -1454,6 +1454,23 @@ footer {
   background: url("../img/sort_3_active.png") no-repeat center;
 }
 
+.select2-search {
+  display: none;
+}
+
+.select2-arrow {
+  border-left: none !important;
+  background: url("../img/price_down.png") no-repeat left !important;
+}
+
+.select2-dropdown-open .select2-arrow {
+  background: url("../img/price_up.png") no-repeat left !important;
+}
+
+.select2-container * {
+  outline: none !important;
+}
+
 .content-page {
   float: right;
   width: 740px;
@@ -1484,6 +1501,7 @@ footer {
 }
 
 .extended .content-page__item {
+  margin-top: -3px;
   position: relative;
   width: 740px;
   -moz-box-sizing: border-box;
@@ -1898,6 +1916,7 @@ footer {
   margin-bottom: 67px;
 }
 .abbreviated .content-page__item {
+  margin-top: -5px;
   width: 740px;
   min-height: 50px;
   background: #fbfbfb;
