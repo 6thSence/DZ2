@@ -133,15 +133,7 @@ gulp.task('bowerDist', function () {
 	gulp.src(RS_CONF.path.htmlDir)
 		.pipe(wiredep({
 			derictory: RS_CONF.path.baseDir+"/bower",
-			overrides: {
-				"qtip2": {
-					"main": ["./jquery.qtip.min.js", "./jquery.qtip.min.css"],
-					"dependencies": {"jquery": ">=1.6.0"}
-				}
-				, exclude: ["bower/qtip2/"]
-				, ignorePath: /^(\.\.\/)*\.\./
-			}
-		}))
+					}))
 		.pipe(gulp.dest(RS_CONF.path.baseDir));
 });
 
