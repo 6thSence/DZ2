@@ -52,30 +52,21 @@ var
 /* --------- jade --------- */
 
 gulp.task('jade', function() {
+	var assets = useref.assets();
 	gulp.src(paths.jade.compiled)
 		.pipe(plumber())
 		.pipe(jade({
 			pretty: '\t',
 		}))
-		.pipe(gulp.dest(paths.jade.destination));
-});
-
-
-//включаем bower файлы
-gulp.task('bower', function () {
-	gulp.src(RS_CONF.path.htmlDir)
 		.pipe(wiredep({
-			derictory: RS_CONF.path.baseDir+"/bower",
-			overrides: {
-				"qtip2": {
-					"main": ["./jquery.qtip.min.js", "./jquery.qtip.min.css"],
-					"dependencies": {"jquery": ">=1.6.0"}
-				}
-				, exclude: ["bower/qtip2/"]
-				, ignorePath: /^(\.\.\/)*\.\./
-			}
+			derictory: RS_CONF.path.baseDir+"/bower"
 		}))
-		.pipe(gulp.dest(RS_CONF.path.baseDir));
+		.pipe(assets)
+		.pipe(gulpif("*.js", uglify()))
+		.pipe(gulpif("*.css", minifyCss({compatibility: "ie8"})))
+		.pipe(assets.restore())
+		.pipe(useref())
+		.pipe(gulp.dest(paths.jade.destination));
 });
 
 /* --------- scss-compass --------- */
@@ -106,9 +97,12 @@ gulp.task('sync', function() {
 gulp.task('watch', function(){
 	gulp.watch(paths.jade.location, ['jade']);
 	gulp.watch(paths.scss.location, ['compass']);
+	gulp.watch(paths.js.location, ['scripts']);
+	gulp.watch(paths.js.plugins, ['plugins']);
+	gulp.watch('bower.json',['jade']);
 	gulp.watch(paths.browserSync.watchPaths).on('change', browserSync.reload);
-	gulp.watch(paths.browserSync.watchPaths).on('change', 'bower');
-});
+})
+
 
 /* --------- default --------- */
 
@@ -119,62 +113,23 @@ gulp.task('default', ['jade', 'compass', 'sync', 'watch','bower']);
  * DIST
  ******************************************/
 
+// Переносим CSS JS HTML в папку DIST
 gulp.task('jadeDist', function() {
+	var assets = useref.assets();
 	gulp.src(paths.jade.compiled)
 		.pipe(plumber())
 		.pipe(jade({
 			pretty: '\t',
 		}))
-		.pipe(gulp.dest(paths.jade.destination));
-});
-
-//включаем bower файлы
-gulp.task('bowerDist', function () {
-	gulp.src(RS_CONF.path.htmlDir)
 		.pipe(wiredep({
-			derictory: RS_CONF.path.baseDir+"/bower",
-					}))
-		.pipe(gulp.dest(RS_CONF.path.baseDir));
-});
-
-gulp.task('watch-bower', function (){
-	gulp.watch('bower.json',['bower']);
-})
-
-
-// Переносим CSS JS HTML в папку DIST
-gulp.task("userefDist", function () {
-	var assets = useref.assets();
-	return gulp.src(RS_CONF.path.htmlDir)
+			derictory: RS_CONF.path.baseDir+"/bower"
+		}))
 		.pipe(assets)
 		.pipe(gulpif("*.js", uglify()))
 		.pipe(gulpif("*.css", minifyCss({compatibility: "ie8"})))
 		.pipe(assets.restore())
 		.pipe(useref())
 		.pipe(gulp.dest("dist"));
-});
-
-gulp.task('compassDist', function() {
-	gulp.src(paths.scss.location)
-		.pipe(plumber())
-		.pipe(compass({
-			config_file: paths.compass.configFile,
-			css: paths.compass.cssFolderDist,
-			sass: paths.compass.scssFolder,
-			image: paths.compass.imgFolder
-		}));
-});
-
-gulp.task('syncDist', function() {
-	browserSync.init({
-		server: {
-			baseDir: paths.browserSync.baseDirDist
-		}
-	});
-});
-
-gulp.task('watchDist', function(){
-	gulp.watch(paths.browserSync.watchPaths).on('change', browserSync.reload);
 });
 
 // Перенос картинок
@@ -187,5 +142,40 @@ gulp.task("images", function () {
 		.pipe(gulp.dest(RS_CONF.path.distDir+"/img"));
 });
 
-gulp.task('build', ['jadeDist', 'bowerDist', 'userefDist', 'compassDist','images']);
-gulp.task('build-sync', ['jadeDist', 'bowerDist', 'userefDist', 'compassDist','images', 'syncDist', 'watchDist']);
+// Перенос шрифтов
+gulp.task("fonts", function() {
+	gulp.src(RS_CONF.path.baseDir + "/fonts/*")
+		.pipe(filter(["*.eot","*.svg","*.ttf","*.woff","*.woff2"]))
+		.pipe(gulp.dest(RS_CONF.path.distDir+"/fonts/"))
+});
+
+			/****************?????*************/
+// Перенос остальных файлов (favicon и т.д.)
+gulp.task("extras", function () {
+	return gulp.src([RS_CONF.path.baseDir+"/*.*", "!"+RS_CONF.path.htmlDir])
+		.pipe(filter([ "*.php","*.ico"]))
+		.pipe(gulp.dest(RS_CONF.path.distDir));
+});
+			/****************????? END *************/
+
+// Очищаем директорию DIST
+gulp.task("clean-dist", function () {
+	return del(RS_CONF.path.distDelDir);
+});
+
+// Вывод размера папки APP
+gulp.task("size-app", function () {
+	return gulp.src(RS_CONF.path.baseDir+"/**/*").pipe(size({title: "APP size: "}));
+});
+
+
+// Сборка и вывод размера папки DIST
+gulp.task("dist", ["jadeDist","compass", "images", "fonts", "extras", "size-app" ], function () {
+	return gulp.src(RS_CONF.path.distDir+"/**/*").pipe(size({title: "DIST size: "}));
+});
+
+// Собираем папку DIST - только когда файлы готовы
+gulp.task("build", ["clean-dist"], function () {
+	gulp.start("dist");
+});
+
