@@ -12,7 +12,6 @@ var
 	gulpif = require("gulp-if"),
 	del = require("del"),
 	filter = require("gulp-filter"),
-	imagemin = require("gulp-imagemin"),
 	size = require("gulp-size"),
 	gutil = require("gulp-util"),
 	RS_CONF = require('./rs-conf.js'),
@@ -135,10 +134,6 @@ gulp.task('jadeDist', function() {
 // Перенос картинок
 gulp.task("images", function () {
 	return gulp.src(RS_CONF.path.baseDir+"/img/**/*")
-		.pipe(imagemin({
-			progressive: true,
-			interlaced: true
-		}))
 		.pipe(gulp.dest(RS_CONF.path.distDir+"/img"));
 });
 
